@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282D35;
+}
+nav{
+  display: flex;
+  align-items: center;
+  background-color: #21222A;
+  height: 90px;
+  padding: 30px 25px;
+  box-shadow: 10px 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+nav.dark {
+  background-color: #cf1345;
+  color: #000;
+}
+main.dark {
+  color: #000; 
+  background-color: #fff;
+}
+.logoText, .navTitle {
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 55px;
+  height: 23px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 23px;
+  width: 23px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #cccccc;
+}
+
+nav.dark .toggler--light {
+  color: #D5D4D8;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+.logoText {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.navTitle {
+  color: #DEEBF8;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-icon {
+  height: 60px;
+  margin-right: 7px;
+}
+main{
+  padding: 57px 27px;
+    color: white;
+    background-image: url(./download.png);
+    background-repeat: no-repeat;
+    background-position: right 85%;
+}
+.mainTitle{
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+.mainFacts{
+  margin-top: 45px;
+  max-width: 400px;
+}
+.mainFacts > li{
+  line-height: 19px;
+  padding-block: 10px;
+}
+.mainFacts > li::marker{
+  color:#61DAFB;
+  font-size: 1.4em;
+}
